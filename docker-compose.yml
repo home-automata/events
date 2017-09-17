@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  automata.events:
+    image: automata.events
+    build:
+      context: ./src/Automata.Events
+      dockerfile: Dockerfile

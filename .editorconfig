@@ -1,0 +1,128 @@
+root = true
+
+[*]
+indent_style = space
+
+[*.{sln,csproj,fsproj}]
+charset = utf-8
+indent_size = 2
+
+[*.{cs,csx,fs,fsx}]
+charset = utf-8
+indent_size = 4
+
+# file layout
+dotnet_sort_system_directives_first = true
+
+# avoid ".this" when not needed
+dotnet_style_qualification_for_field = false:suggestion
+dotnet_style_qualification_for_property = false:suggestion
+dotnet_style_qualification_for_method = false:suggestion
+dotnet_style_qualification_for_event = false:suggestion
+
+# suggest more modern language features when available
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_coalesce_expression = true:suggestion
+dotnet_style_null_propagation = true:suggestion
+dotnet_style_explicit_tuple_names = true:suggestion
+
+[*.cs]
+# prefer "var" everywhere
+csharp_style_var_for_built_in_types = true:suggestion
+csharp_style_var_when_type_is_apparent = true:suggestion
+csharp_style_var_elsewhere = true:suggestion
+
+# prefer method-like constructs to have a block body
+csharp_style_expression_bodied_methods = false:none
+csharp_style_expression_bodied_constructors = false:none
+csharp_style_expression_bodied_operators = false:none
+
+# prefer property-like constructs to have an expression-body
+csharp_style_expression_bodied_properties = true:none
+csharp_style_expression_bodied_indexers = true:none
+csharp_style_expression_bodied_accessors = true:none
+
+# suggest more modern language features when available
+csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
+csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
+csharp_style_inlined_variable_declaration = true:suggestion
+csharp_style_throw_expression = true:suggestion
+csharp_style_conditional_delegate_call = true:suggestion
+csharp_prefer_simple_default_expression = true:suggestion
+
+# newline settings
+csharp_new_line_before_open_brace = types,methods,indexers,properties
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_members_in_anonymous_types = true
+csharp_new_line_between_query_expression_clauses = true
+csharp_preserve_single_line_statements = true
+
+# spacing
+csharp_space_after_cast = true
+csharp_space_after_colon_in_inheritance_clause = true
+csharp_space_before_colon_in_inheritance_clause = true
+csharp_space_after_comma = true
+csharp_space_after_dot = false
+csharp_space_after_keywords_in_control_flow_statements = true
+csharp_space_after_semicolon_in_for_statement = true
+csharp_space_around_binary_operators = ignore
+csharp_space_before_comma = false
+csharp_space_before_dot = false
+csharp_space_before_semicolon_in_for_statement = false
+csharp_space_before_open_square_brackets = false
+csharp_space_between_empty_square_brackets = false
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_call_parameter_list_parentheses = false
+csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_between_square_brackets = false
+
+# braces
+csharp_prefer_braces = true
+
+# **** Resharper ****
+
+# braces
+resharper_brace_style = end_of_line
+resharper_type_declaration_braces = next_line
+resharper_invocable_declaration_braces = next_line
+resharper_accessor_owner_declaration_braces = next_line
+
+# line breaks
+resharper_keep_user_linebreaks = true
+resharper_place_abstract_accessorholder_on_single_line = true
+resharper_place_simple_accessorholder_on_single_line = false
+resharper_place_simple_accessor_on_single_line = true
+resharper_place_type_attribute_on_same_line = false
+resharper_place_method_attribute_on_same_line = false
+resharper_allow_comment_after_lbrace = false
+resharper_special_else_if_treatment = true
+
+# indentation
+indent_switch_labels = true
+resharper_indent_nested_usings_stmt = false
+resharper_indent_nested_fixed_stmt = false
+resharper_indent_nested_lock_stmt = false
+resharper_indent_type_constraints = true
+
+# alignment
+resharper_align_multiline_parameter = true
+resharper_align_first_arg_by_paren = false
+resharper_align_multiline_argument = true
+resharper_align_multiline_extends_list = true
+resharper_align_multiline_calls_chain = true
+resharper_align_multiline_array_and_object_initializer = false
+resharper_indent_anonymous_method_block = false
+resharper_align_multiple_declaration = true
+resharper_align_multline_type_parameter_list = true
+resharper_align_multline_type_parameter_constrains = true
+resharper_align_linq_query = true
+
+# spaces
+resharper_space_within_single_line_array_initializer_braces = true

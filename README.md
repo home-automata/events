@@ -1,2 +1,2 @@
 # events
-Automata device event bus service
+Automata device event bus service.
