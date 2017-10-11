@@ -1,0 +1,32 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/tom/Projects/Automata/events/src/Automata.Events/Automata.Events.csproj",
+    "projectName": "Automata.Events",
+    "projectPath": "/Users/tom/Projects/Automata/events/src/Automata.Events/Automata.Events.csproj",
+    "outputPath": "/Users/tom/Projects/Automata/events/src/Automata.Events/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp2.0"
+    ],
+    "frameworks": {
+      "netcoreapp2.0": {
+        "projectReferences": {}
+      }
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.0": {
+      "dependencies": {
+        "Crc32.NET": {
+          "target": "Package",
+          "version": "1.1.0"
+        },
+        "Microsoft.AspNetCore.All": {
+          "target": "Package",
+          "version": "2.0.0"
+        }
+      }
+    }
+  }
+}
